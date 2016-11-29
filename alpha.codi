@@ -1,0 +1,37 @@
+def menu (url1, imgPath, url2, url3)
+ create_multiple 3 link id
+        url = url3
+        text = "This is a link"
+        test = "Ja"
+        position = middle-left
+        if id == 3 and test == "Ja"
+            position = bottom-left
+            text = "This is another link"
+            url = url2
+        /if
+        if id == 1
+            position = top-left
+            text = "This link is here"
+        /if
+    /create_multiple
+    create title
+        text = "Welcome"
+        color = "green"
+        position = top-middle
+    /create
+    create link
+        text = "I am here"
+        url = url1
+        position = bottom-right
+    /create
+    create image
+        path = imgPath
+        position = middle-middle
+    /create
+/def
+create paragraph
+    text = "This is an ordinary paragraph with fancy color"
+    color = "red"
+    position = middle-right
+/create
+menu.call("http://google.com", "http://i.imgur.com/6yH9Fkx.gif", "http://example.com", "http://bing.com")
